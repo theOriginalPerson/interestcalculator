@@ -1,14 +1,15 @@
-compoundInterest = function() {
+compoundInterest = function(p, iRate, time) {
         while (true) {
-            p = float(input("enter principal value:   "))
-            iRate = float(input("enter interest rate (decimal):     "))
-            t = float(input("enter months:    "))
+            const p = float("principal value")
+            const iRate = float("interest rate")
+            const time = float("number of time periods elapsed")
+            const n = float("number of times interest applied per time period")
             
-            iAccrued = p * iRate * t
-            total = iAccrued + p
             
-            msg = ("the interest accrued is " + str(iAccrued) + " and the total combined is " + str(total))
+            let total = p(1 + iRate/n)**(n*t)
+            
+            msg = ("the total is "+ str(total))
         
-            return(msg) 
+            return(msg)
         }
 }
