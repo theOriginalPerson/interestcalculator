@@ -13,3 +13,4 @@ compoundInterest = function(p, iRate, time) {
             return(msg)
         }
 }
+document.getElementById("interest").innerHTML = compoundInterest();

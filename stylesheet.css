@@ -5,8 +5,8 @@ body {
 }
 
 .values {
+    position: fixed;
     text-align: center;
-    display: inline-block;
     vertical-align: middle;
     background-color: gray;
     width: 600px;
