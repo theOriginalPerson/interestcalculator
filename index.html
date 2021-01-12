@@ -4,20 +4,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>interest calculator</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="">
+        <script src="main.js"></script>
     </head>
-    <body>
-        
+    <body onload="compoundInterest();"> 
         <div class="values">
             <h1>simple compound interest calculator</h1>
-            <form id="interest">
-                Principal value:<br><input type="text" name="p value"><br><br>
-                Interest rate:<br><input type="text" name="iRate value"><br><br>
-                Number of time periods elapsed:<br><input type="text" name="time value"><br><br>
-                Number of times interest applied per time period:<br><input type="text" name="n value"><br><br>
-            </form>
-            <p id="interest">Your total is: </p> 
-        </div>
+            <form>
 
-        <script src="main.js"></script>
+                Principal value:<br><input type="number" value="" id="pVal"><br><br>
+
+                Interest rate:<br><input type="number" value="" id="iRV"><br><br>
+
+                Number of time periods elapsed:<br><input type="number" value="" id="timeVal"><br><br>
+
+                Number of times interest applied per time period:<br><input type="number" value="" id="nVal"><br><br>
+
+                <button onclick="compoundInterest()">calculate</button><br><br>
+
+                <p id="interest"></p>
+
+            </form>
+            
+                 
+        </div>
     </body>
 </html>

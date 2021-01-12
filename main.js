@@ -1,16 +1,15 @@
-compoundInterest = function(p, iRate, time) {
-        while (true) {
-            const p = float("principal value")
-            const iRate = float("interest rate")
-            const time = float("number of time periods elapsed")
-            const n = float("number of times interest applied per time period")
-            
-            
-            let total = p(1 + iRate/n)**(n*t)
-            
-            msg = ("the total is "+ str(total))
-        
-            return(msg)
-        }
+/////////////////////////////////////////////////////
+////////////// main function located here ///////////
+/////////////////////////////////////////////////////
+
+function compoundInterest() {
+    const pVal = float(document.getElementById('pVal').value);
+    const iRV = float(document.getElementById('iRV').value);
+    const timeVal = float(document.getElementById('timeVal').value);
+    const nVal = float(document.getElementById('nVal').value);
+    const total = pVal*(1 + iRV/nVal)**(nVal*timeVal);
+    
+    var msg = "the total is " + total;
+    document.getElementById('interest').innerHTML = msg;
 }
-document.getElementById("interest").innerHTML = compoundInterest();
+
