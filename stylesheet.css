@@ -7,9 +7,29 @@ body {
 .values {
     position: fixed;
     text-align: center;
-    vertical-align: middle;
     background-color: gray;
     width: 600px;
     outline: none;
     border-radius: 15px;
+}
+
+input {
+    border-radius: 15px 15px;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    border-radius: 15px 15px;
+    width: 100px;
+    font-size: large;
+    outline: none;
+}
+
+button:hover {
+    background-color: silver;
+}
+
+button:active {
+    background-color: gray;
 }

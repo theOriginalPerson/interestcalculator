@@ -7,26 +7,24 @@
         <link rel="icon" href="">
         <script src="main.js"></script>
     </head>
-    <body onload="compoundInterest();"> 
+    <body> 
         <div class="values">
             <h1>simple compound interest calculator</h1>
             <form>
 
-                Principal value:<br><input type="number" value="" id="pVal"><br><br>
+                How much money you started with<br>Principal value:<br><input type="number" value="" id="pVal"><br><br>
 
                 Interest rate:<br><input type="number" value="" id="iRV"><br><br>
 
                 Number of time periods elapsed:<br><input type="number" value="" id="timeVal"><br><br>
 
-                Number of times interest applied per time period:<br><input type="number" value="" id="nVal"><br><br>
+                Number of times the interest<br>was applied per time period:<br><input type="number" value="" id="nVal"><br><br>
 
                 <button onclick="compoundInterest()">calculate</button><br><br>
 
-                <p id="interest"></p>
+                <p id="interest" style="color: white;"></p>
 
-            </form>
-            
-                 
+            </form>        
         </div>
     </body>
 </html>
