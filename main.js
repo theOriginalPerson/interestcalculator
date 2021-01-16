@@ -3,16 +3,16 @@
 /////////////////////////////////////////////////////
 
 function compoundInterest() {
-    let pVal = float(document.getElementById('pVal').value);
-    let iRV = float(document.getElementById('iRV').value);
-    let timeVal = float(document.getElementById('timeVal').value);
-    let nVal = float(document.getElementById('nVal').value);
-    let total = pVal*(1 + iRV/nVal)**(nVal*timeVal);
+    let p = parseFloat(document.getElementById('pVal').value);
+    let i = parseFloat(document.getElementById('iRV').value);
+    let time = parseFloat(document.getElementById('timeVal').value);
+    let n = parseFloat(document.getElementById('nVal').value);
+    let total = p*(1 + i/n)**(n*time);
     
     let msg = "the total is " + String(total);
     
     
-    if (pVal && iRV && timeVal && nVal >= 0) {
+    if (p || i || time || n >= 0) {
         document.getElementById('interest').innerHTML = msg;
     }
     else {
